@@ -27,7 +27,7 @@ namespace competition
             {
 
                 // Obtener configuración desde variables de entorno
-                var connectionString = "AccountEndpoint=https://poli.documents.azure.com:443/;AccountKey=xxx;";
+                var connectionString = "AccountEndpoint=xxx";
                 var databaseName = "competitions";
                 var containerName = "football";
 
