@@ -1,0 +1,167 @@
+.competition-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 20px;
+}
+
+.competition-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.competition-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.competition-title {
+  flex: 1;
+}
+
+.competition-title h3 {
+margin: 0 0 8px 0;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+}
+
+.competition-type {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+text-transform: uppercase;
+}
+
+.competition-type.league {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.competition-type.cup {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.competition-emblem {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.competition-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #666;
+  min-width: 80px;
+}
+
+.detail-value {
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.area-flag {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.current-season {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.current-season h4 {
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+}
+
+.season-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.season-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.matchday {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.competition-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.seasons-count {
+  font-weight: 600;
+}
+
+.last-updated {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .competition-card {
+    padding: 16px;
+  }
+
+  .competition-header {
+  flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .competition-emblem {
+    margin-top: 12px;
+  }
+
+  .competition-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
